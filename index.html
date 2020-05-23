@@ -4,7 +4,6 @@
     <meta charset="utf-8"> 
     <title>Project: Art </title> 
   </head> 
-  <body> 
     <style> 
       
       
@@ -48,21 +47,38 @@
           text-decoration: none; 
           display: block; 
       } 
+      
+    .img-area {
+            display: flex; 
+            flex-wrap: wrap; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center; 
+            
+      
+      .single-img {
+             padding: 0 20px 20px; 
+      }
+       
       </style>
    
-    
+    <body> 
      
-     <img src="https://www.artic.edu/iiif/2/58f1ebba-1880-2423-e00d-f8aa299442f0/full/843,/0/default.jpg">; 
-    
+        <div class="wrapper"> 
             
-     <img src="https://www.thebroad.org/sites/default/files/art/golub_mercenaries_iii.jpg">; 
+             <div class="img-area"> 
+               
+                  <div class="single-img"><img src="https://www.artic.edu/iiif/2/58f1ebba-1880-2423-e00d-f8aa299442f0/full/843,/0/default.jpg"></div> 
+    
+                  <div class="single-img"><img src="https://www.thebroad.org/sites/default/files/art/golub_mercenaries_iii.jpg"></div> 
+               
+                  <div class="single-img"><img src="https://www.artic.edu/iiif/2/58f1ebba-1880-2423-e00d-f8aa299442f0/full/843,/0/default.jpg"></div>
      
-      
-      <img src="https://www.artic.edu/iiif/2/58f1ebba-1880-2423-e00d-f8aa299442f0/full/843,/0/default.jpg">; 
-     
-        
-            
-    <nav>
+          </div>
+          
+      </div> 
+ <nav>
+   
         <ul> 
     
       <h3> <a href="index.html"> Leo Demontelle </h3> 
