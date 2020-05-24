@@ -4,129 +4,52 @@
     <meta charset="utf-8"> 
     <title>Project: Art </title> 
   </head> 
-    <style> 
-      
-      form {
-        
-            margin: 0 auto; 
-            width: 400px;
-            padding: 1em; 
-            border: 1px solid #CCC; 
-            border-radius: 1em; 
-      
-    ul {  
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            
-        }
-   
-    form li + li { 
-                
-                margin-top: 1m; 
-        } 
-        
-        label {
-              display: inline-block; 
-              width: 90px;
-              text-align: right; 
-        } 
-              
-           
-         input,
-         textarea { 
-              font: 1em sans-serif; 
-              width: 300px; 
-              box-sizing: border-box; 
-              border: 1px solid #999; 
-           
-          input: focus,
-          textarea: focus {
-              border-color: #000;
-           }
-           
-           textarea {
-                vertical-align: top; 
-                height: 5em; 
-                
-      } 
-           
-           button {
-             
-                margin-left: .5em;
-           } 
-        
-      nav {
-            width: 100%; 
-            height: 100px; 
-            background-color: 
-          } 
-      
-      
-    h3 {
-          font-size: 15px; 
-          text-align: center; 
-          margin-top: 10.0em; 
-          font-family: Baskerville;  
-      } 
-      
-    h3 a {
-          color: black;
-          text-decoration: none; 
-          display: block; 
-      } 
+    <style>
      
+      body{ 
+            margin: 0; 
+            padding: 0;
+            background-size: cover; 
+      }
+      contact-form { 
+             width: 85%; 
+              max-width: 600px; 
+              background: #f1f1f1; 
+              position: absolute; 
+              top: 50%; 
+              left: 50%; 
+              transform: translate (-50%, -50%); 
+              padding: 30px 40px; 
+              box-sizing: border-box; 
+              border-radius: 8px; 
+              text-align: center; 
+      }
     </style> 
   
     <body> 
-      
-      <nav> 
-    
-      <h3><a href="index.html"> Leo Demontelle </h3> 
-    
-      <li><a href="biography.html"> Biography</a></li> 
-    
-      <li><a href="clothing.html"> Clothing</a></li> 
-    
-      <li><a href="manifesto.html"> Manifesto </a></li> 
-    
-      <li><a href="contact.html"> Contact </a></li>  
-          
-</nav> 
-                    
-      <form action="/handling-form" method="post"> 
+      <div class="contact-form"> 
+       <div class="txtb"> 
+         <label> Full Name : </label> 
+         <input type="text" name="" value="" placeholder="Enter Your Name">
+        </div> 
+         
+         <div class="txtb"> 
+           <label> Email Adress: </label> 
+           <input type="text" name="" value="" placeholder="Enter Your Address"> 
+      </div> 
         
-      <ul> 
-          <li>
-
-            <label for="name"> Name:</label> 
-            <input type="text" id="name" name="user_name"> 
-        </li> 
-        <li>
-          
-          <label for="mail">E-mail:</label> 
-          <input type="email" id="mail" name="user_email"> 
-        </li>
-        <li>
-          <label for="msg"> Message:</label> 
-          <textarea id="msg" name="user_message"></textarea> 
-        </li>
-        
-        </ul>
-      </form> 
+          <div class="textb"> 
+            <label> Message: </label> 
+            <textarea></textarea> 
+        </div> 
+        <a class="btn"> Send </a> 
+      </div> 
       
-      <input type="text" value="by default this element is filled with this text"> 
-          
-      <textarea>
-       by default this element is filled with this tex
-      </textarea> 
       
-      <li class="button"> 
-        <button type="submit"> Send your message </button> 
-      </li> 
-      
+            
+    
       
       
       
   </body> 
-                                                                
+</html>                                                               
